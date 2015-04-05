@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HubSpot | Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li><a href="index.html"><span>Home Page</span></a></li>
+          <li><a href="#"><span>Support</span></a></li>
+          <li><a href="#"><span>About Us</span></a></li>
+          <li><a href="#"><span>Blog</span></a></li>
+          <li class="active"><a href="contact.html"><span>Updates</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html"><img src="images/hl.png">
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="1500" height="327" alt="" /> </a> <a href="#"><img src="images/slide2.jpg" width="1500" height="327" alt="" /> </a> <a href="#"><img src="images/slide3.jpg" width="1500" height="327" alt="" /> </a> </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+       
+        <div class="article">
+          <h2>Register E-mail</h2>
+          <div class="clr"></div>
+          <form action="#" method="post" id="sendemail">
+            <ol>
+              <li>
+                <label for="email"> &nbsp;&nbsp;&nbsp;&nbsp;Email :</strong></label>
+                <input id="email" name="email" class="text" />
+              </li>
+              <li><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="myButton">Register</a>
+                <div class=""></div>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="searchform">
+          <form id="formsearch" name="formsearch" method="post" action="#">
+            <span>
+            <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Search" type="text" />
+            </span>
+            <input name="button_search" src="images/search.gif" class="button_search" type="image" />
+          </form>
+        </div>
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"> Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+       </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2>About</h2>
+        <a href="#">What is HubSpot<br /><br />Our Story<br /><br />Executive Team<br /><br />FAQ's<br /><br />Partners<br /></a></div>
+      <div class="col c2">
+        <h2>Contact Sales</h2>
+          <ul class="fbg_ul">
+          <li><a href="#">North America      888.482.7768</a></li><br />
+		  <li><a href="#">United Kingdom     +44.20.36847648</a></li><br />
+		  <li><a href="#">Ireland            +353.1.5187500</a></li><br />
+		  <li><a href="#">Germany            +49.69.299571918</a></li><br />
+		  <li><a href="#">Australia          +61.1300.482.7768</a></li>
+        </ul>
+      </div>
+      <div class="col c3">
+        <h2>Locations</h2>
+        
+        <p class="contact_info"> 
+		 <ul class="fbg_ul">
+          <li><a href="#">HubSpot, Inc.
+			25 First Street, 2nd Floor
+			Cambridge, MA 02141</a></li><br />
+		  <li><a href="#">
+			European Headquarters
+			2nd Floor, 30 North Wall Quay
+			Dublin 1, Ireland</a></li><br />
+          <li><a href="#">Asia/Pacific Office
+			Level 19, 1 O'Connell Street
+			Sydney, NSW 2000, Australia
+			ABN: 33169157911 </a></li>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+       <p class="lf">Copyright &copy; <a href="#">HubSpot</a>. All Rights Reserved</p>
+      
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+<?php
+	if(isset($_POST['Submit'])){
+    $user_email=$_POST['email'];
+    
+    if($user_email==''){
+    echo "<script> alert('Please enter Email') </script> ";
+    }
+    }
+?>
